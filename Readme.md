@@ -31,15 +31,17 @@ PORT=3456
 SESSION_SECRET=<session-secret>
 ```
 
-4. Run the server using `npm run dev` in ./server
-5. Create a .env file in ./app with the following content:
+4. Push prisma schema using `npm run db:push` in ./server
+5. Generate prisma types using `npm run db:generate` in ./server
+6. Run the server using `npm run dev` in ./server
+7. Create a .env file in ./app with the following content:
 
 ```
 SERVER_URL=http://localhost:3456
 ```
 
-6. Run the app using `npm run dev` in ./app
-7. Open http://localhost:5173 in your browser
+8. Run the app using `npm run dev` in ./app
+9. Open http://localhost:5173 in your browser
 
 ## Deployment steps
 
